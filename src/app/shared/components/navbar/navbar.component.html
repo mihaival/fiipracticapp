@@ -13,5 +13,15 @@
       </ul>
     </div>
   </nav>
-  <div class="account">Ovidiu Grigoras</div>
+  <div class="account">
+    <mat-menu #appMenu="matMenu" class="matMenuClass">
+      <button mat-menu-item>Admin</button>
+      <button mat-menu-item [routerLink]="['/account']" routerLinkActive="active">Account</button>
+    </mat-menu>
+
+    <div mat-icon-button [matMenuTriggerFor]="appMenu" class="menuClass">
+      <mat-icon>arrow_drop_down</mat-icon>
+      {{user.prenume}} {{user.nume}}
+    </div>
+   </div>
 </header>
