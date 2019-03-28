@@ -11,11 +11,11 @@ import { CategoryComponent } from './presentation/components/category/category.c
 import { CategoryTitleComponent } from './presentation/components/category/category-title/category-title.component';
 import { CategoryTrainersComponent } from './presentation/components/category/category-trainers/category-trainers.component';
 import {MatIconModule, MatInputModule, MatMenuModule} from '@angular/material';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { AccountFormComponent } from './accounts/components/account-form/account-form.component';
-import {FormsModule, NgForm, ReactiveFormsModule} from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchComponent } from './shared/components/search/search.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +26,6 @@ import { SearchComponent } from './shared/components/search/search.component';
     CategoryComponent,
     CategoryTitleComponent,
     CategoryTrainersComponent,
-    AccountFormComponent,
     SearchComponent
   ],
   imports: [
