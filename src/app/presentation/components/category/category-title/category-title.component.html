@@ -5,7 +5,11 @@
       <span>9 Martie - 31 Martie</span>
     </div>
     <div class="arias">
-      <button *ngFor="let ariaButton of ariaInput.name">{{ariaButton}}</button>
+      <button 
+        *ngFor="let ariaButton of ariaInput.name" 
+        [routerLink]="[ariaButton]"
+        (click)="getCourseClicked(ariaButton)">{{ariaButton}}</button>
+      <button class="applyBtn" [routerLink]="['apply']" routerLinkActive="active">Aplica</button>
     </div>
   </div>
 </div>

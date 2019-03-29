@@ -32,7 +32,6 @@ export class AriasComponent implements OnInit {
   getResponse(event) {
    this.filteredArias = this.arias.filter(aria => aria.stack.toLowerCase()
      .includes(event.toLowerCase()));
-   console.log(this.filteredArias);
   }
 
 }

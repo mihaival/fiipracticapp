@@ -30,7 +30,6 @@ export class AccountFormComponent implements OnInit {
   }
 
   onSubmit(form: NgForm) {
-    console.log(form);
     this.account = {
       email: form.value.email,
       nume: form.value.nume,

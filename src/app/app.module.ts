@@ -15,6 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchComponent } from './shared/components/search/search.component';
+import { ApplyFormComponent } from './shared/components/apply-form/apply-form.component';
+import { CategoryCourseComponent } from './presentation/components/category/category-course/category-course.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { SearchComponent } from './shared/components/search/search.component';
     CategoryComponent,
     CategoryTitleComponent,
     CategoryTrainersComponent,
-    SearchComponent
+    SearchComponent,
+    ApplyFormComponent,
+    CategoryCourseComponent
   ],
   imports: [
     BrowserModule,

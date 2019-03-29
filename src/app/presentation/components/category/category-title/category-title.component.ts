@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import { CoursesService } from 'src/app/presentation/services/courses.service';
 
 @Component({
   selector: 'app-category-title',
@@ -7,9 +8,13 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class CategoryTitleComponent implements OnInit {
   @Input() ariaInput;
-  constructor() { }
+  constructor(private courseService: CoursesService) { }
 
   ngOnInit() {
+  }
+
+  getCourseClicked(course) {
+    this.courseService.setCourse(course);
   }
 
 }

@@ -34,12 +34,7 @@
   button {
     @include primary-button($primary-color);
     margin: 5px;
-    &.applyBtn {
-      background-color: green;
-      color: white;
-      border: none;
-    }
-} 
+}
 }
 
 .bottom-category {
